@@ -1,0 +1,8 @@
+--- 
+- 
+  hosts: dev
+  tasks: 
+    - 
+      become: true
+      name: "install application"
+      yum: "name=git state=installed"

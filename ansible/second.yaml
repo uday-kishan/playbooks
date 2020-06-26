@@ -1,0 +1,6 @@
+---
+- hosts: dev
+  tasks:
+  - name: install application
+    yum: "name=node state=installed"
+    become: true

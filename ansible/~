@@ -1,0 +1,12 @@
+--- 
+- 
+  hosts: c8
+  tasks: 
+    -
+     name: "creating users"
+     user: "name=uday state=present
+     welcome: yes
+    -
+     name: install web role
+     yum: "name=httpd state=installed"
+ 

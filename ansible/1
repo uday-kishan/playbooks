@@ -1,0 +1,6 @@
+---
+- hosts: c7
+  tasks: 
+  - name: creating users
+    user: name:uday state=present
+    become: yes

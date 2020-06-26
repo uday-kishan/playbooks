@@ -1,0 +1,14 @@
+--- 
+- 
+  hosts: dev
+  tasks: 
+    -
+     become: true
+     name: create user
+     user: name={{ item }} state=present
+     with_items:
+      - uday
+      - anurag
+
+
+
