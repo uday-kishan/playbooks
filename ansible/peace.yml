@@ -1,0 +1,9 @@
+---
+- hosts: c8
+  tasks:
+   -
+     name: "clone git repo"
+     tasks:
+     git:
+     repo: https://github.com/uday-kishan/playbooks.git
+     become: yes
